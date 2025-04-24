@@ -1,0 +1,7 @@
+controller\TarefaController.class
+module-info.class
+view\Main.class
+dao\TarefaDAO.class
+util\Relogio.class
+database\ConnectionFactory.class
+model\Tarefa.class

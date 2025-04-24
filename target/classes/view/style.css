@@ -1,0 +1,122 @@
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color:   #D0E8FF; /* Fundo branco acinzentado (mantido) */
+    -fx-padding: 20px;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2d3748; /* Preto acinzentado mais escuro */
+}
+
+.button {
+    -fx-background-color: #F1F1F1; /* Cinza bem claro para botões */
+    -fx-text-fill: #2d3748; /* Preto acinzentado mais escuro */
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 3, 0.2, 0, 1);
+    -fx-transition: background-color 0.3s ease;
+    -fx-border-radius: 8px;
+    -fx-border-color: transparent;
+}
+
+.button:hover {
+    -fx-background-color: #cbd5e1; /* Cinza um pouco mais escuro no hover */
+}
+
+.button:pressed {
+    -fx-background-color: #718096; /* Cinza mais escuro ao pressionar */
+    -fx-text-fill: #f9faff; /* Texto claro ao pressionar */
+}
+
+.text-field, .text-area, .date-picker, .combo-box {
+    -fx-background-color: #ffffff; /* Fundo branco para os inputs (mantido) */
+    -fx-text-fill: #2d3748; /* Preto acinzentado mais escuro */
+    -fx-prompt-text-fill: #718096; /* Cinza médio para o texto de dica */
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: #a0aec0; /* Borda cinza um pouco mais escura */
+    -fx-border-width: 1px;
+    -fx-padding: 8px;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused, .text-area:focused, .date-picker:focused, .combo-box:focused {
+    -fx-border-color: #4c51bf; /* Cor de foco vibrante mais escura */
+    -fx-effect: dropshadow(gaussian, rgba(76, 81, 191, 0.3), 4, 0.3, 0, 1);
+}
+
+.table-view {
+    -fx-background-color: #ffffff; /* Fundo branco para a tabela (mantido) */
+    -fx-border-radius: 8px;
+    -fx-border-color: #a0aec0; /* Borda cinza um pouco mais escura */
+    -fx-border-width: 1px;
+}
+
+.table-column .table-cell {
+    -fx-text-fill: #2d3748; /* Preto acinzentado mais escuro */
+    -fx-background-color: transparent;
+    -fx-border-color: #e0e0e0; /* Bordas claras entre as células (ligeiramente mais escuras) */
+}
+
+.table-column .column-header {
+    -fx-background-color: #2d3748; /* Cinza bem claro para o cabeçalho (ligeiramente mais escuro) */
+    -fx-border-color: #2d3748;
+    -fx-border-width: 0 0 1px 0; /* Borda inferior no cabeçalho */
+}
+
+.table-column .column-header .label {
+    -fx-text-fill: #2d3748; /* Preto acinzentado mais escuro */
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #f7fafc; /* Cinza muito claro para linhas pares (ligeiramente mais escuro) */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #c6f6d5; /* Verde claro para seleção (alternativa ao azul) */
+    -fx-text-fill: #1a4d2e; /* Verde escuro na seleção */
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2d3748; /* Preto acinzentado mais escuro */
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #e2e8f0;
+}
+
+.combo-box .list-cell:selected {
+    -fx-background-color: #ffff;
+    -fx-text-fill: #000;
+}
+
+.date-picker .date-cell {
+    -fx-text-fill: #2d3748; /* Preto acinzentado mais escuro */
+    -fx-background-color: transparent;
+}
+
+.date-picker .date-cell:hover {
+    -fx-background-color: #e2e8f0;
+}
+
+.date-picker .date-cell:selected {
+    -fx-background-color: #c6f6d5;
+    -fx-text-fill: #1a4d2e;
+}
+
+.date-picker .month-year-pane {
+    -fx-background-color: #e2e8f0;
+}
+
+.date-picker .spinner {
+    -fx-text-fill: #2d3748; /* Preto acinzentado mais escuro */
+}
